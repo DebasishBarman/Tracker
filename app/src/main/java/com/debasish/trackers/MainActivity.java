@@ -2,6 +2,7 @@ package com.debasish.trackers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -99,5 +100,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotoTrack(View view) {
+        startActivity(new Intent(MainActivity.this,Countries.class));
+        finish();
     }
 }
